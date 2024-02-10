@@ -1,0 +1,279 @@
+:root {
+    --w-color: #fff;
+    --main-color: #0086cf;
+    --fw-Medium-500: 500;
+    --fw-SemiBold-600: 600;
+    --fw-Bold-700: 700;
+    --fw-ExtraBold-800 : 800;
+
+    --transition-3: ease 0.3s;
+    --transition-5: ease 0.5s;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body {
+    scroll-behavior: smooth;
+    font-family: 'Cairo', sans-serif;
+}
+
+@media (max-width: 786px) {
+    h2 {
+        font-size: 25px;
+    }
+
+    h3 {
+        font-size: 20px;
+    }
+
+    p {
+        font-size: 16px;
+    }
+
+    a {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 450px) {
+    h2 {
+        font-size: 20px;
+    }
+
+    h3 {
+        font-size: 18px;
+    }
+
+    p {
+        font-size: 14px;
+    }
+
+    a {
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 350px) {
+    h2 {
+        font-size: 18px;
+    }
+
+    h3 {
+        font-size: 16px;
+    }
+
+    p {
+        font-size: 12px;
+    }
+
+    a {
+        font-size: 10px;
+    }
+}
+
+ul {
+    list-style: none;
+}
+
+img,
+a {
+    display: inline-block;
+}
+
+.container {
+    padding-inline: 15px;
+    margin-inline: auto;
+}
+
+@media (min-width: 786px) {
+    .container {
+        width: 750px;
+    }
+}
+
+@media (min-width: 991px) {
+    .container {
+        width: 970px;
+    }
+}
+
+@media (min-width: 1199px) {
+    .container {
+        width: 1150px;
+    }
+}
+/* Start home */
+body {
+    background-color: #e0e0e0d0;
+}
+
+.header {
+    background-color: var(--main-color);
+    height: 69px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header h2 {
+    text-align: center;
+    padding-block: 20px;
+    color: #fff;
+}
+
+.main .container {
+    height: calc(100vh - (69px + 29px));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 15px;
+}
+.main .container a {
+    background-color: var(--main-color);
+    color: var(--w-color);
+    padding: 15px 25px;
+    border-radius: 10px;
+    font-size: 18px;
+    font-weight: 700;
+    transition: var(--transition-3);
+    border: 1px solid var(--main-color);
+}
+
+.main .container a:hover {
+    background-color: transparent;
+    color: #0086cf;
+}
+
+@media (max-width: 1200px) {
+    .main .container {
+        flex-direction: column;
+    }
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 29px;
+    width: 100%;
+    background-color: var(--main-color);
+    text-align: center;
+    color: var(--w-color);
+    font-size: 16px;
+    padding: 5px 15px ;
+}
+
+.send-email {
+    width: 500px;
+    padding: 15px;
+    border: 1px solid var(--main-color);
+    border-radius: 15px;
+    flex-direction: column;
+}
+
+.send-email input {
+    outline: none;
+    border: none;
+    border: 1px solid var(--main-color);
+    margin-bottom: 10px;
+    display: block;
+    padding: 5px 10px;
+    border-radius: 7px;
+    width: 100%;
+    color: var(--main-color);
+    background-color: transparent;
+    font-size: 18px;
+}
+
+.send-email input::placeholder {
+    color: var(--main-color);
+    text-transform: capitalize;
+}
+
+.send-email button {
+    outline: none;
+    width: 100%;
+    padding: 10px 15px;
+    margin-top: 20px;
+    border-radius: 7px;
+    border: none;
+    background-color: var(--main-color);
+    color: var(--w-color);
+    cursor: pointer;
+    font-weight: 700;
+}
+
+@media (max-width: 786px) {
+    .send-email {
+        width: 350px;
+    }
+}
+
+@media (max-width: 400px) {
+    .send-email {
+        width: 250px;
+    }
+}
+.generate {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.generate h2 {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid var(--main-color);
+}
+
+.generate button {
+    outline: none;
+    padding: 10px 15px;
+    margin-top: 20px;
+    border-radius: 7px;
+    border: 1px solid var(--main-color);
+    color: var(--main-color);
+    cursor: pointer;
+    font-weight: 700;
+    background-color: transparent;
+}
+.boxs {
+    display: flex;
+    flex-direction: row;
+}
+.box {
+    padding: 5px;
+    background-color: red;
+    cursor: pointer;
+    color: var(--w-color);
+}
+
+.box h2 {
+    font-size: 16px;
+}
+.box button {
+    background-color: transparent;
+    border: none;
+    color: var(--w-color);
+    font-size: 16px;
+    cursor: pointer;
+}
+.go-home {
+    position: relative;
+    bottom: 100px;
+    left: 20px;
+    background-color: var(--main-color);
+    width: fit-content;
+    border-radius: 100px;
+}
+.go-home a {
+    color: var(--w-color);
+    padding: 10px 15px;
+    font-size: 18px;
+}
+/* End home */
