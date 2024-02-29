@@ -3,8 +3,8 @@ let nameInput = document.getElementById("name")
 let emailInput = document.getElementById("email")
 let ticketInput = document.getElementById("ticket")
 
-let ServiceID = "service_5vb9z9t";
-let TemplateID = "template_ty6gr1l";
+let ServiceID = "service_sefvrak";
+let TemplateID = "template_bkdb3yh";
 
 sendEmail.addEventListener('submit', (e)=>{
     e.preventDefault();
@@ -19,3 +19,4 @@ sendEmail.addEventListener('submit', (e)=>{
         location.reload()
     })
 })
+

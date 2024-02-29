@@ -4,13 +4,12 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Send Email</title>
+    <title>Generate Number</title>
     <link rel="shortcut icon" href="assets/images/logo.png" type="image/x-icon">
     <!-- Font Awesome Css -->
     <link rel="stylesheet" href="assets/css/all.css" />
     <!-- google font -->
-    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;500;600;700;800;900&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
     <!-- Normalize css file -->
     <link rel="stylesheet" href="assets/css/normalize.css" />
     <!-- css file -->
@@ -18,36 +17,20 @@
     <!-- Sweet Alert -->
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.10.5/dist/sweetalert2.all.min.js"></script>
     <link href="https://cdn.jsdelivr.net/npm/sweetalert2@11.10.5/dist/sweetalert2.min.css" rel="stylesheet" />
-
-
-
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
-    </script>
-    <script type="text/javascript">
-        (function () {
-            emailjs.init({
-                publicKey: "mi-iZuabwWCJt41OO",
-            });
-        })();
-    </script>
-
 </head>
 
 <body>
     <section class="header">
         <section class="container">
-            <h2>Send Email</h2>
+            <h2>WhatsApp</h2>
         </section>
     </section>
 
     <section class="main">
-        <section class="container">
-            <form class="send-email" id="sendEmail">
-                <input type="name" placeholder="name" id="name" name="name">
-                <input type="email" placeholder="email" id="email" name="email">
-                <input type="text" placeholder="ticket number" name="ticket" id="ticket">
-                <button>Send Email</button>
-            </form>
+        <section class="container generate">
+            <input type="number" id="number" placeholder="Enter a number">
+            <a target="_blank" onclick="WhatsApp()" id="WhatsApp">Go WhatsApp</a>
+            </button>
         </section>
     </section>
 
@@ -58,10 +41,10 @@
     <section class="go-home">
         <a href="index.html">Go Home</a>
     </section>
-
-    
+    <!-- Font Awesome Js -->
+    <script src="assets/js/all.js"></script>
+    <!-- Js file -->
     <script src="assets/js/main.js"></script>
-    <script src="assets/js/mail.js"></script>
 </body>
 
 </html>

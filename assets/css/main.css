@@ -277,3 +277,14 @@ body {
     font-size: 18px;
 }
 /* End home */
+
+input {
+    border: none;
+    outline: none;
+    padding: 10px 15px;
+    border-radius: 100px;
+    width: 100%;
+    background-color: #fff;
+    text-align: center;
+    border: 1px solid #0086cf;
+}

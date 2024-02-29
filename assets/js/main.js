@@ -45,13 +45,16 @@ buttons.forEach((button, index) => {
     });
 });
 
+function WhatsApp(){
+    let inputNumber = document.getElementById("number");
+    
+    let link = document.getElementById("WhatsApp");
+    link.href = `http://wa.me/+20${inputNumber.value}`
+}
+
 let date = new Date()
 let cc = document.querySelectorAll("#cc")
 
 cc.forEach((e)=> {
     e.innerHTML = `Design By BSA, cc ${date.getFullYear()}`
 })
-
-
-
-
