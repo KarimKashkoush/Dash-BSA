@@ -50,9 +50,9 @@ function WhatsApp() {
     let name = document.getElementById("name");
 
     let link = document.getElementById("WhatsApp");
-    link.href = `http://wa.me/+20${inputNumber.value}/?text=
-انا ${name.value} من BSA ، حضرتك سجلت معانا ف Bio verse  ، bm-egypt verse فحابين نأكد على حضورك
-    `
+    link.href = `http://wa.me/+20${inputNumber.value}/?text=انا ${name.value} من BSA، حضرتك سجلت معايا في Bio verse  Bm-Egypt verse فحابين نأكد علي حضرتك الحضور 
+ويرجي الانضمام سريعا الي الجروب التالي لمعرفة التفاصيل الخاصة بالحضور
+https://chat.whatsapp.com/HWLQmqrSNBN9XYSCj5Vm7X`
 }
 
 let date = new Date()
