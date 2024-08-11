@@ -45,16 +45,19 @@ buttons.forEach((button, index) => {
     });
 });
 
-function WhatsApp(){
+function WhatsApp() {
     let inputNumber = document.getElementById("number");
-    
+    let name = document.getElementById("name");
+
     let link = document.getElementById("WhatsApp");
-    link.href = `http://wa.me/+20${inputNumber.value}`
+    link.href = `http://wa.me/+20${inputNumber.value}/?text=
+انا ${name.value} من BSA ، حضرتك سجلت معانا ف Bio verse  ، bm-egypt verse فحابين نأكد على حضورك
+    `
 }
 
 let date = new Date()
 let cc = document.querySelectorAll("#cc")
 
-cc.forEach((e)=> {
+cc.forEach((e) => {
     e.innerHTML = `Design By BSA, cc ${date.getFullYear()}`
 })
