@@ -50,9 +50,9 @@ function WhatsApp() {
     let name = document.getElementById("name");
 
     let link = document.getElementById("WhatsApp");
-    link.href = `http://wa.me/+20${inputNumber.value}/?text=انا ${name.value} من BSA، حضرتك سجلت معانا في Bio verse  Movere verse فحابين نأكد علي حضرتك الحضور 
+    link.href = `http://wa.me/+20${inputNumber.value}/?text=انا ${name.value} من BSA، حضرتك سجلت معانا في Bio verse Sine Wave Verse فحابين نأكد علي حضرتك الحضور 
  ويرجي الانضمام سريعا الي الجروب التالي لمعرفة التفاصيل الخاصة بالحضور  
-   https://chat.whatsapp.com/DPmyO8bRi6Z7DldurfOtYl`
+   https://chat.whatsapp.com/KV4R2FfIuoA0XLDMAspzLf`
 }
 
 let date = new Date()
