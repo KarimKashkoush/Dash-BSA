@@ -3,8 +3,8 @@ let nameInput = document.getElementById("name")
 let emailInput = document.getElementById("email")
 let ticketInput = document.getElementById("ticket")
 
-let ServiceID = "service_sefvrak";
-let TemplateID = "template_bkdb3yh";
+let ServiceID = "service_ep8804u";
+let TemplateID = "template_hpzurtq";
 
 sendEmail.addEventListener('submit', (e)=>{
     e.preventDefault();
